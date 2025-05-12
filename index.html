@@ -10,13 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        /* Apply Inter font globally */
         body {
             font-family: 'Inter', sans-serif;
-            /* Subtle pattern or slightly darker gray background */
-            background-color: #eef2f7; /* Slightly cooler light gray */
+            background-color: #eef2f7;
         }
-        /* Fade-in animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(15px); }
             to { opacity: 1; transform: translateY(0); }
@@ -24,7 +21,6 @@
         .fade-in-card {
             animation: fadeIn 0.7s ease-out forwards;
         }
-        /* Container for the responsive iframe */
         .responsive-iframe-container {
             position: relative;
             overflow: hidden;
@@ -39,39 +35,28 @@
             height: 100%;
             border: 0;
         }
-        /* UNICAH Colors */
         .unicah-blue { color: #003366; }
         .unicah-blue-bg { background-color: #003366; }
         .unicah-light-blue { color: #0056b3; }
-
-        /* Enhanced hover effects with transitions */
         a.unicah-blue {
             transition: color 0.3s ease;
         }
         a.unicah-blue:hover {
-            color: #007bff; /* Brighter blue on hover */
+            color: #007bff;
         }
-        /* Card hover effect */
         .main-card {
-             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-       /* .main-card:hover {
-             transform: translateY(-5px); /* Slight lift on hover */
-       /* box-shadow: 0 15px 30px rgba(0, 51, 102, 0.15); /* Deeper shadow on hover */
-       /* } */ /* Commented out lift effect as it might be too much */
-
     </style>
 </head>
 <body class="text-gray-800 antialiased">
-
     <div class="container mx-auto max-w-3xl px-4 py-10 md:py-16">
-
         <div class="bg-white rounded-xl shadow-xl overflow-hidden fade-in-card border border-gray-200 main-card">
 
             <div class="relative">
-                 <img src="https://i.ibb.co/WWSHwXb0/Whats-App-Image-2025-04-26-at-8-20-55-PM-1.jpg" alt="Banner de la Jornada Científica UNICAH - Grupo de Estudiantes" class="w-full h-52 md:h-72 object-cover"
+                <img src="https://i.ibb.co/WWSHwXb0/Whats-App-Image-2025-04-26-at-8-20-55-PM-1.jpg" alt="Banner de la Jornada Científica UNICAH - Grupo de Estudiantes" class="w-full h-52 md:h-72 object-cover"
                      onerror="this.onerror=null; this.src='https://i.ibb.co/WWSHwXb0/Whats-App-Image-2025-04-26-at-8-20-55-PM-1.jpg';">
-                 <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
             </div>
 
             <header class="p-6 md:p-10 text-center border-b border-gray-200 bg-white">
@@ -80,16 +65,38 @@
                 <h2 class="text-xl md:text-2xl font-light italic unicah-light-blue mb-5">“NUESTRO FUTURO EN LA SOCIEDAD”</h2>
 
                 <div class="my-6 text-base text-gray-700 space-y-2">
-                   <p class="font-medium text-lg">¡Únete a la primera jornada científica para estudiantes de enfermería en UNICAH!</p>
-                   <p><i class="fas fa-map-marker-alt mr-2 text-gray-500"></i><span class="font-semibold">Lugar:</span> Seminario Menor, Santiago Apóstol</p>
-                   <p><i class="fas fa-calendar-alt mr-2 text-gray-500"></i><span class="font-semibold">Fecha:</span> 16 de mayo de 2025</p> </div>
+                    <p class="font-medium text-lg">¡Únete a la primera jornada científica para estudiantes de enfermería en UNICAH!</p>
+                    <p><i class="fas fa-map-marker-alt mr-2 text-gray-500"></i><span class="font-semibold">Lugar:</span> Seminario Menor, Santiago Apóstol</p>
+                    <p><i class="fas fa-calendar-alt mr-2 text-gray-500"></i><span class="font-semibold">Fecha:</span> 16 de mayo de 2025</p>
+                </div>
 
-                <div class="text-sm md:text-base text-gray-600">
+                <div class="text-sm md:text-base text-gray-600 space-y-2">
                     <p>Organizado por: Enfermería UNICAH, San Pedro Sula</p>
-                    <p><i class="fas fa-envelope mr-2 text-gray-500"></i>Contacto: <a href="mailto:enfermeria@unicah.edu" class="unicah-blue hover:text-blue-600 font-medium">enfermeria@unicah.edu</a></p> </div>
+                    <p><i class="fas fa-envelope mr-2 text-gray-500"></i>Contacto: 
+                        <a href="mailto:enfermeria@unicah.edu" class="unicah-blue hover:text-blue-600 font-medium">
+                            enfermeria@unicah.edu
+                        </a>
+                    </p>
+                    <p><i class="fab fa-whatsapp mr-2 text-green-500"></i>MSC Norma Mejía: 
+                        <a href="https://wa.me/50499368840" target="_blank" class="unicah-blue font-medium hover:text-blue-600">
+                            +504 9936-8840
+                        </a>
+                    </p>
+                    <p><i class="fab fa-whatsapp mr-2 text-green-500"></i>MSC Brigitte Berlioz: 
+                        <a href="https://wa.me/50433139017" target="_blank" class="unicah-blue font-medium hover:text-blue-600">
+                            +504 3313-9017
+                        </a>
+                    </p>
+                    <p><i class="fab fa-whatsapp mr-2 text-green-500"></i>Lic. Liliam Flores: 
+                        <a href="https://wa.me/50431804015" target="_blank" class="unicah-blue font-medium hover:text-blue-600">
+                            +504 3180-4015
+                        </a>
+                    </p>
+                </div>
             </header>
 
-            <section id="registro" class="p-6 md:p-10 bg-gray-50"> <h3 class="text-2xl md:text-3xl font-semibold text-center unicah-blue mb-5">Formulario de Registro</h3>
+            <section id="registro" class="p-6 md:p-10 bg-gray-50">
+                <h3 class="text-2xl md:text-3xl font-semibold text-center unicah-blue mb-5">Formulario de Registro</h3>
                 <p class="text-center text-gray-600 mb-8 md:mb-10">Completa tu inscripción directamente aquí para asegurar tu cupo.</p>
 
                 <div class="responsive-iframe-container rounded-lg overflow-hidden border-2 border-gray-300 shadow-md mx-auto" style="max-width: 640px;">
@@ -97,8 +104,10 @@
                 </div>
             </section>
 
-            <footer class="text-center p-5 md:p-8 unicah-blue-bg text-white text-sm rounded-b-xl"> &copy; 2025 UNICAH Enfermería San Pedro Sula. Todos los derechos reservados.
+            <footer class="text-center p-5 md:p-8 unicah-blue-bg text-white text-sm rounded-b-xl">
+                &copy; 2025 UNICAH Enfermería San Pedro Sula. Todos los derechos reservados.
             </footer>
-
-        </div> </div> </body>
+        </div>
+    </div>
+</body>
 </html>
